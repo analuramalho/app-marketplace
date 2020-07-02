@@ -21,6 +21,9 @@ routes.delete('/ads/:id',controllers.AdController.destroy)
 
 
 
+routes.post('/purchase',controllers.PurchaseController.store)
+
+
 
 
 module.exports = routes
