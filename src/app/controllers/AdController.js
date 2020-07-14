@@ -39,9 +39,8 @@ class AdController{
         return res.json(ad)
     }
 
-    //crição anuncio 
+    //crição anuncio
     async store(req,res){
-
         const ad = await Ad.create({ ...req.body, author: req.userId })
         //const ad = await Ad.create({ ...req.body, author: '5efbcc28aca67406b847df1c'})
 
